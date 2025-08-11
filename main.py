@@ -83,15 +83,6 @@ def analyze_all_pdfs():
         print(f"No PDF files found in '{pdf_folder}' folder")
         return
     
-    print("=== REALISTIC INK CONSUMPTION CALCULATION ===")
-    print("Based on industry data:")
-    print(f"• HP Large Format: 3ml per A3 = 1.5ml per A4 (100% coverage)")
-    print(f"• Epson Professional: $1.30 per 8x10 = ~₱7.80 per A4")
-    print(f"• Industry standard: 1-2ml per full color page")
-    print(f"• Ink per pixel: {INK_PER_UNIT_ML:.12f} ml")
-    print(f"• Cost per pixel: ₱{COST_PER_UNIT:.10f}")
-    print(f"• Expected A4 cost: ₱{(PIXELS_PER_A4 * COST_PER_UNIT):.2f}")
-    print(f"{'='*60}\n")
     
     pdf_results = {}
     
