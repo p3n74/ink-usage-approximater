@@ -1,0 +1,3 @@
+# Exclude everything inside the "main files" folder but keep the folder itself
+main files/*
+!main files/.gitkeep
